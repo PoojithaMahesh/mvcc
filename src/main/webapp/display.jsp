@@ -14,6 +14,8 @@
 	<th>Name</th>
 	<th>Address</th>
 	<th>Phone</th>
+	<th>Delete</th>
+	<th>Update</th>
 	</tr>
 	
 	<c:forEach var="student" items="${list}" >
@@ -23,6 +25,8 @@
 	<td>${student.name }</td>
 	<td>${student.address }</td>
 	<td>${student.phone }</td>
+	<td><a href="delete?id=${student.id }">Delete</a></td>
+    <td><a href="update?id=${student.id }">Update</a></td>
 	</tr>
 	</c:forEach>
 	
